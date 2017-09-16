@@ -43,7 +43,7 @@ object MDFilters
       {
         case digraph(name) => name
         case graph(name)   => name
-        case _             => sys.error("cound not match for graph name")
+        case _             => sys.error(reportError("cound not lift graph name from dot. Graph name is missing? eg digraph nameHere { }"))
       }
 
       val filepath = s"$outputPath/$graphname.$outputType"
