@@ -1,30 +1,49 @@
 [0m[[0m[0mdebug[0m] [0m[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mInitial source changes: [0m
-[0m[[0m[0mdebug[0m] [0m[0m	removed:Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0m	added: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(/Users/psksvp/MyCode/MDFilters/src/main/scala/psksvp/MDFilters.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	removed:Set(/Users/psksvp/MyCode/MDFilters/src/main/scala/psksvp/Pandoc.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	added: Set(/Users/psksvp/MyCode/MDFilters/src/main/scala/psksvp/MainEntryPoint.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	modified: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mExternal API changes: API Changes: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mModified binary dependencies: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(psksvp.MDFilters)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(psksvp.Pandoc)[0m
 [0m[[0m[0mdebug[0m] [0m[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mSources indirectly invalidated by:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	product: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0m	binary dep: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0m	external source: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(psksvp.MDFilters)[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(/Users/psksvp/MyCode/MDFilters/src/main/scala/psksvp/MDFilters.scala)[0m
-[0m[[0m[0minfo[0m] [0m[0mCompiling 1 Scala source to /Users/psksvp/MyCode/MDFilters/target/scala-2.12/classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(psksvp.Pandoc)[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(/Users/psksvp/MyCode/MDFilters/src/main/scala/psksvp/MainEntryPoint.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0mRecompiling all 3 sources: invalidated sources (2) exceeded 50.0% of all sources[0m
+[0m[[0m[0minfo[0m] [0m[0mCompiling 3 Scala sources to /Users/psksvp/MyCode/MDFilters/target/scala-2.12/classes ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.12:1.0.0:compile for Scala 2.12.3[0m
 [0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.12:1.0.0:compile for Scala 2.12.3[0m
-[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 78f997af for Scala compiler version 2.12.3[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 671cabb5 for Scala compiler version 2.12.3[0m
 [0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
 [0m[[0m[0mdebug[0m] [0m[0m	/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/classes:/Users/psksvp/.sbt/boot/scala-2.12.3/lib/scala-library.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
 [0m[[0m[0mdebug[0m] [0m[0m	/Users/psksvp/MyCode/MDFilters/target/scala-2.12/classes[0m
-[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 2.603600893 s[0m
+[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 2.859189831 s[0m
 [0m[[0m[0minfo[0m] [0m[0mDone compiling.[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from psksvp.Pandoc...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: Set(psksvp.Pandoc)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(psksvp.Pandoc)[0m
+[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(psksvp.Pandoc,ModifiedNames(changes = UsedName(Pandoc,[Default]), UsedName(notify,[Default]), UsedName(==,[Default]), UsedName(equals,[Default]), UsedName(##,[Default]), UsedName($isInstanceOf,[Default]), UsedName(wait,[Default]), UsedName(ne,[Default]), UsedName(main,[Default]), UsedName(!=,[Default]), UsedName(isInstanceOf,[Default]), UsedName(hashCode,[Default]), UsedName($asInstanceOf,[Default]), UsedName(finalize,[Default]), UsedName(synchronized,[Default]), UsedName(getClass,[Default]), UsedName(toString,[Default]), UsedName(apply,[Default]), UsedName(clone,[Default]), UsedName(eq,[Default]), UsedName(asInstanceOf,[Default]), UsedName(notifyAll,[Default]))) invalidates 1 classes due to The psksvp.Pandoc has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(Pandoc,[Default]), UsedName(notify,[Default]), UsedName(==,[Default]), UsedName(equals,[Default]), UsedName(##,[Default]), UsedName($isInstanceOf,[Default]), UsedName(wait,[Default]), UsedName(ne,[Default]), UsedName(main,[Default]), UsedName(!=,[Default]), UsedName(isInstanceOf,[Default]), UsedName(hashCode,[Default]), UsedName($asInstanceOf,[Default]), UsedName(finalize,[Default]), UsedName(synchronized,[Default]), UsedName(getClass,[Default]), UsedName(toString,[Default]), UsedName(apply,[Default]), UsedName(clone,[Default]), UsedName(eq,[Default]), UsedName(asInstanceOf,[Default]), UsedName(notifyAll,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> by transitive inheritance: Set(psksvp.Pandoc)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> [0m
+[0m[[0m[0mdebug[0m] [0m[0m	> [0m
+[0m[[0m[0mdebug[0m] [0m[0m        [0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from psksvp.MainEntryPoint...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: Set(psksvp.MainEntryPoint)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(psksvp.MainEntryPoint)[0m
+[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(psksvp.MainEntryPoint,ModifiedNames(changes = UsedName(notify,[Default]), UsedName(==,[Default]), UsedName(equals,[Default]), UsedName(##,[Default]), UsedName($isInstanceOf,[Default]), UsedName(wait,[Default]), UsedName(ne,[Default]), UsedName(main,[Default]), UsedName(!=,[Default]), UsedName(isInstanceOf,[Default]), UsedName(hashCode,[Default]), UsedName($asInstanceOf,[Default]), UsedName(finalize,[Default]), UsedName(synchronized,[Default]), UsedName(getClass,[Default]), UsedName(toString,[Default]), UsedName(apply,[Default]), UsedName(clone,[Default]), UsedName(eq,[Default]), UsedName(asInstanceOf,[Default]), UsedName(notifyAll,[Default]), UsedName(MainEntryPoint,[Default]))) invalidates 1 classes due to The psksvp.MainEntryPoint has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(notify,[Default]), UsedName(==,[Default]), UsedName(equals,[Default]), UsedName(##,[Default]), UsedName($isInstanceOf,[Default]), UsedName(wait,[Default]), UsedName(ne,[Default]), UsedName(main,[Default]), UsedName(!=,[Default]), UsedName(isInstanceOf,[Default]), UsedName(hashCode,[Default]), UsedName($asInstanceOf,[Default]), UsedName(finalize,[Default]), UsedName(synchronized,[Default]), UsedName(getClass,[Default]), UsedName(toString,[Default]), UsedName(apply,[Default]), UsedName(clone,[Default]), UsedName(eq,[Default]), UsedName(asInstanceOf,[Default]), UsedName(notifyAll,[Default]), UsedName(MainEntryPoint,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> by transitive inheritance: Set(psksvp.MainEntryPoint)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> [0m
+[0m[[0m[0mdebug[0m] [0m[0m	> [0m
+[0m[[0m[0mdebug[0m] [0m[0m        [0m
 [0m[[0m[0mdebug[0m] [0m[0mNew invalidations:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: Set()[0m
