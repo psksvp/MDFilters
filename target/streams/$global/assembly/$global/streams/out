@@ -4,13 +4,21 @@
 [0m[[0m[0minfo[0m] [0m[0mMerging files...[0m
 [0m[[0m[33mwarn[0m] [0m[0mMerging 'META-INF/MANIFEST.MF' with strategy 'discard'[0m
 [0m[[0m[33mwarn[0m] [0m[0mStrategy 'discard' was applied to a file[0m
-[0m[[0m[0minfo[0m] [0m[0mSHA-1: f927d56575065aea4530150b74c9a43c257070df[0m
+[0m[[0m[0minfo[0m] [0m[0mSHA-1: 949b27511b03c8c1277ac76ce413e3ef39c4851e[0m
 [0m[[0m[0minfo[0m] [0m[0mPackaging /Users/psksvp/MyCode/MDFilters/target/scala-2.12/MDFilters-assembly-0.10101010.jar ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	library.properties[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/psksvp/MyCode/MDFilters/target/streams/$global/assemblyOption/$global/streams/assembly/713edfb90ddac97c7719ea0471bd150eeaebb281_f2e496f21af2d80b48e0a61773f84c3a76a0d06f_da39a3ee5e6b4b0d3255bfef95601890afd80709/library.properties[0m
+[0m[[0m[0mdebug[0m] [0m[0m	psksvp/FS$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/psksvp/MyCode/MDFilters/target/streams/$global/assemblyOption/$global/streams/assembly/e9263683a8e8eff705959a31bb51843f692d96e1_dir/psksvp/FS$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	psksvp/FS.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/psksvp/MyCode/MDFilters/target/streams/$global/assemblyOption/$global/streams/assembly/e9263683a8e8eff705959a31bb51843f692d96e1_dir/psksvp/FS.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	psksvp/MDFilters$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/psksvp/MyCode/MDFilters/target/streams/$global/assemblyOption/$global/streams/assembly/e9263683a8e8eff705959a31bb51843f692d96e1_dir/psksvp/MDFilters$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	psksvp/MDFilters$CSVTable$3.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/psksvp/MyCode/MDFilters/target/streams/$global/assemblyOption/$global/streams/assembly/e9263683a8e8eff705959a31bb51843f692d96e1_dir/psksvp/MDFilters$CSVTable$3.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	psksvp/MDFilters$CSVTable$4$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /Users/psksvp/MyCode/MDFilters/target/streams/$global/assemblyOption/$global/streams/assembly/e9263683a8e8eff705959a31bb51843f692d96e1_dir/psksvp/MDFilters$CSVTable$4$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	psksvp/MDFilters$GraphViz$3.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/psksvp/MyCode/MDFilters/target/streams/$global/assemblyOption/$global/streams/assembly/e9263683a8e8eff705959a31bb51843f692d96e1_dir/psksvp/MDFilters$GraphViz$3.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	psksvp/MDFilters$GraphViz$4$.class[0m

@@ -9,9 +9,77 @@ object MDFilters
    
   def apply(text:String):String=
   {
-    filterGraphviz(text)
+    makeDirectory("./images")
+    val a = filterGraphviz(text, "pdf", outputPath = "./images")
+    filterCSV(a)
   }
-  
+
+  def filterCSV(mdSource:String):String=
+  {
+    case class CSVTable(attribute:String, csvSource:String)
+
+    def patternMatch(text:String):Set[(String, CSVTable)]=
+    {
+      val csvtable = """(?s)~~~\s*csvtable\s*\{(.*?)\}(.*?)~~~""".r
+      val r = for (vfes <- csvtable.findAllIn(mdSource)) yield
+              {
+                vfes match
+                {
+                  case csvtable(attrib, csvSrc) => Set((vfes, CSVTable(attrib, csvSrc.trim)))
+                  case _ => Set[(String, CSVTable)]()
+                }
+              }
+
+      r.reduceLeft(_ union _)
+    }
+
+    def transform(g:CSVTable):String=
+    {
+      import sys.process._
+
+      val caption = """caption\s*=\s*\"(.*?)\"""".r
+
+      val captionText = caption.findFirstIn(g.attribute).getOrElse("") match
+      {
+        case caption(text) => text
+        case _             => "No caption"
+      }
+
+      val csvFile = toFile(g.csvSource, ".csv")
+      //val tableText = Seq("csvtomd", csvFile).!!
+      val tableText = Seq("csv2md", "--pretty", csvFile).!!
+      val result = new StringBuilder()
+      result.append(s": $captionText {${g.attribute.split(" ").head}}\n\n")
+      result.append(tableText)
+      result.append("\n")
+      result.toString
+    }
+
+    def runFilter(s:Set[(String, CSVTable)]):Set[(String, String)]=
+    {
+      for(p <- s) yield
+      {
+        (p._1, transform(p._2))
+      }
+    }
+
+    def go():String=
+    {
+      val p = runFilter(patternMatch(mdSource))
+      searchAndReplace(p, mdSource)
+    }
+
+    go()
+  }
+
+
+  /**
+    *
+    * @param mdSource
+    * @param outputType
+    * @param outputPath
+    * @return
+    */
   def filterGraphviz(mdSource:String,
                      outputType:String = "pdf",
                      outputPath:String = "."):String=
@@ -20,6 +88,13 @@ object MDFilters
 
     def patternMatch(text:String):Set[(String,GraphViz)]=
     {
+      /*
+        (?s)   keep looking pass new line
+        \s*    skip spaces
+        (.*?)  a group of wild card which can be sucked up
+        \{     esc for char {
+        \}     esc for char }
+       */
       val graphviz = """(?s)~~~\s*graphviz\s*\{(.*?)\}(.*?)~~~""".r
       val r = for (vfes <- graphviz.findAllIn(text)) yield
               {

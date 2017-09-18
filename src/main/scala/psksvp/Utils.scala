@@ -17,6 +17,12 @@ object Utils
       s
   }
 
+  def makeDirectory(path:String):Unit=
+  {
+    import sys.process._
+    Seq("mkdir", "-p", path).!
+  }
+
   def toFile(code:String, fileExt:String):String=
   {
     var tmpDir = System.getProperty("java.io.tmpdir")

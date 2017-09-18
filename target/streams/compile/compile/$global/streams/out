@@ -1,4 +1,6 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/psksvp/MyCode/MDFilters/src/main/scala/psksvp/Pandoc.scala:22:13: value > is not a member of Array[String][0m
-[0m[[0m[31merror[0m] [0m[0m    if(args > 0)[0m
-[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/psksvp/MyCode/MDFilters/src/main/scala/psksvp/MDFilters.scala:17:3: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Unit[0m
+[0m[[0m[31merror[0m] [0m[0m required: String[0m
+[0m[[0m[31merror[0m] [0m[0m  {[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
